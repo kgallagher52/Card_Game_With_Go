@@ -19,13 +19,6 @@
 package main
 
 func main() {
-	//Slice of type string
-	cards := deck{"Ace of diamonds", newCard()} //2
-	cards = append(cards, "six of spades")      //3
-
-	cards.print() // Getting this from the reciver in deck.go 5
-}
-
-func newCard() string { // Function decleration
-	return "sssss"
+	cards := newDeck() //2
+	cards.print()      // Getting this from the reciver in deck.go 5
 }
