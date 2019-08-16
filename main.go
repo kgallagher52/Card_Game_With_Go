@@ -18,18 +18,14 @@
 
 package main
 
-import "fmt"
-
 func main() {
 	//Slice of type string
-	cards := []string{"Ace of diamonds", newCard()}
+	cards := deck{"Ace of diamonds", newCard()}
 	cards = append(cards, "six of spades")
-	fmt.Println(my_cards)
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+
+	cards.print() // Getting this from the reciver in deck.go
 }
 
-// func newCard() string { // Function decleration
-// 	return my_cards
-// }
+func newCard() string { // Function decleration
+	return "sssss"
+}
